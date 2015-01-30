@@ -89,7 +89,7 @@ Sets the scrolling speed.
 Sets the amount of offset(in pixels) from the top of found content. Verbatim will scroll to the found content's offset less the amount of offset. This allows for some spacing between the top of the window and the found content.
 
 
-###allowImages
+###Allow Images
 **default**: true
 
 **type**: boolean

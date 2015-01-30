@@ -94,7 +94,7 @@ Sets the amount of offset(in pixels) from the top of found content. Verbatim wil
 
 **type**: boolean
 
-By default, Verbatim will also allow users to select and share links to images as well. If you'd like to turn this feature off, sell allowImages to false.
+By default, Verbatim will also allow users to select and share links to images as well. If you'd like to turn this feature off, uncheck this checkbox.
 
 ##Add Bitly Token to Enable Short Links
 

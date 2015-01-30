@@ -33,9 +33,10 @@ class VerbatimPlugin extends BasePlugin
 	{
 		return array(
 			'searchContainer' => array(AttributeType::Mixed, 'default' => 'body'),
-			'highlightParent' => array(AttributeType::Mixed, 'default' => 1),
-			'defaultStyling' => array(AttributeType::Mixed, 'default' => 1),
-			'animated' => array(AttributeType::Mixed, 'default' => 1),
+			'highlightParent' => array(AttributeType::Mixed, 'default' => "true"),
+			'defaultStyling' => array(AttributeType::Mixed, 'default' => "true"),
+			'animated' => array(AttributeType::Mixed, 'default' => "true"),
+			'allowImages' => array(AttributeType::Mixed, 'default' => "true"),
 			'animationSpeed' => array(AttributeType::Number, 'default' => 2000),
 			'scrollingOffset' => array(AttributeType::Number, 'default' => 200),
 			'addedClass' => array(AttributeType::Mixed, 'default' => 'verbatim-found-content'),
@@ -68,7 +69,7 @@ class VerbatimPlugin extends BasePlugin
 		{
 			if( !isset($settings[$checkbox]) )
 			{
-				$settings[$checkbox] = "0";
+				$settings[$checkbox] = "false";
 			}
 		}
 

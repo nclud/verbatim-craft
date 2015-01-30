@@ -23,21 +23,21 @@ Verbatim is released under the [GNU GPLv3 license](http://www.gnu.org/licenses/g
 ##Settings
 Verbatim comes with the following default settings:
 
-###highlightParent
+###Highlight Parent Element
 **default**: true
 
 **type**: boolean
 
-Set highlightParent to true if you want to highlight the parent element of the text that is selected.
+Set Highlight Parent Element to true if you want to highlight the parent element of the text that is selected.
 
-###searchContainer
+###Search Container
 **default**: 'body'
 
 **type**: jQuery selector
 
 Set the container that Verbatim will search for selected text. This will also limit the area in which content can be selected. If you only want a certain container to be selectable, make sure you change this setting using a jQuery selector(example: .content or #mainContainer);
 
-###highlightedClass
+###CSS Class To Add To Highlighted Elements
 **default**: 'highlight'
 
 **type**: string
@@ -45,7 +45,7 @@ Set the container that Verbatim will search for selected text. This will also li
 Verbatim wraps the found content in a span element which is assigned a class, used to highlight the found text. You can change this class if you'd like, but make sure you update your CSS. 
 
 
-###highlightColor
+###Default Color of Highlights
 **default**: '#FFFF00'
 
 **type**: hex color string
@@ -53,35 +53,35 @@ Verbatim wraps the found content in a span element which is assigned a class, us
 Pretty self-explanatory: this setting allows you to change the background color of the text when it is both selected and when it is found.
 
 
-###selectedClass
+###CSS Class to Add To Selected Text When Copying Link
 **deault**:'verbatim-selected-text'
 
 **type**: string
 
 When selected text from a Verbatim enabled container, Verbatim wraps the selected text in a span element. You can change this class if you'd like, but make sure you update your CSS. 
 
-###buttonClass
+###CSS Class to Add To Copy Link Button
 **default**: 'verbatim-button-container'
 
 **type**: string
 
 Verbatim appends a div element with two buttons insode of the span element that wraps the selected text. You can change the class of the buttom container, but make sure you update your CSS. 
 
-###animated
+###Enable Amimated Scrolling To Content
 **default**: true
 
 **type**:boolean
 
 Animates scrolling to the content. Set to false to prevent animated scrolling.
 
-###animationSpeed
+###Speed of Scrolling Animation
 **default**: 2000
 
 **type**: integer
 
 Sets the scrolling speed.
 
-###scrollingOffset
+###Amount of Offset in Pixels From Top of Window
 **default**: 200
 
 **type**: integer
@@ -96,7 +96,7 @@ Sets the amount of offset(in pixels) from the top of found content. Verbatim wil
 
 By default, Verbatim will also allow users to select and share links to images as well. If you'd like to turn this feature off, sell allowImages to false.
 
-##Using Bitly For Link Shortening
+##Add Bitly Token to Enable Short Links
 
 We highly recommend using Bitly to generate short links, and Verbatim works seamlessly with Bitly! All you need to do is add a [Bitly Authentication Token](http://dev.bitly.com/get_started.html). Simply add your token to the Verbatim plugin settings in the Craft control panel.
 

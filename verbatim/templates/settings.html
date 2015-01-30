@@ -1,0 +1,58 @@
+<style>
+	.verbatim .heading{ font-weight: bold; }
+	.verbatim input{ margin-bottom: 15px;}
+</style>
+
+<div class="verbatim">
+	<div class="heading"><label for="searchContainer">Search Container</label></div>
+	<input id="searchContainer" name="searchContainer" type="text" class="text" size="30" value="{{settings['searchContainer']}}" />
+
+	<div class="heading"><label for="highlightParent">Highlight Parent Element</label></div>
+
+	{% set checked = "" %}
+	{% if settings.highlightParent == 1 %}
+		{% set checked = "checked" %}
+	{% endif %}
+
+	<input id="highlightParent" name="highlightParent" type="checkbox" class="" value="1" {{checked}} />
+
+	<div class="heading"><label for="defaultStyling">Enable Default Styling</label></div>
+	{% set checked = "" %}
+	{% if settings.defaultStyling == 1 %}
+		{% set checked = "checked" %}
+	{% endif %}
+
+	<input id="defaultStyling" name="defaultStyling" type="checkbox" class="" value="1" {{checked}} />
+
+	<div class="heading"><label for="animated">Enable Amimated Scrolling To Content</label></div>
+	{% set checked = "" %}
+	{% if settings.animated == 1 %}
+		{% set checked = "checked" %}
+	{% endif %}
+
+	<input id="animated" name="animated" type="checkbox" class="" value="1" {{checked}} />
+
+	<div class="heading"><label for="animationSpeed">Speed of Scrolling Animation</label></div>
+	<input id="animationSpeed" name="animationSpeed" type="text" class="text" size="30" value="{{settings['animationSpeed']}}" />
+
+	<div class="heading"><label for="scrollingOffset">Amount of Offset in Pixels From Top of Window</label></div>
+	<input id="scrollingOffset" name="scrollingOffset" type="text" class="text" size="30" value="{{settings['scrollingOffset']}}" />
+
+	<div class="heading"><label for="addedClass">CSS Class To Add To Found Elements</label></div>
+	<input id="addedClass" name="addedClass" type="text" class="text" size="30" value="{{settings['addedClass']}}" />
+
+	<div class="heading"><label for="highlightedClass">CSS Class To Add To Highlighted Elements</label></div>
+	<input id="highlightedClass" name="highlightedClass" type="text" class="text" size="30" value="{{settings['highlightedClass']}}" />
+
+	<div class="heading"><label for="highlightColor">Default Color of Highlights</label></div>
+	<input id="highlightColor" name="highlightColor" type="text" class="text" size="30" value="{{settings['highlightColor']}}" />
+
+	<div class="heading"><label for="selectedClass">CSS Class to Add To Selected Text When Copying Link</label></div>
+	<input id="selectedClass" name="selectedClass" type="text" class="text" size="30" value="{{settings['selectedClass']}}" />
+
+	<div class="heading"><label for="buttonClass">CSS Class to Add To Copy Link Button</label></div>
+	<input id="buttonClass" name="buttonClass" type="text" class="text" size="30" value="{{settings['buttonClass']}}" />
+
+	<div class="heading"><label for="bitlyToken">Add Bitly Token to Enable Short Links</label></div>
+	<input id="bitlyToken" name="bitlyToken" type="text" class="text" size="30" value="{{settings['bitlyToken']}}" />
+</div>

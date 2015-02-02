@@ -100,3 +100,8 @@ By default, Verbatim will also allow users to select and share links to images a
 
 We highly recommend using Bitly to generate short links, and Verbatim works seamlessly with Bitly! All you need to do is add a [Bitly Authentication Token](http://dev.bitly.com/get_started.html). Simply add your token to the Verbatim plugin settings in the Craft control panel.
 
+
+##Changelog
+
+###1.1.1
+* added IE check to prevent the plugin from firing in IE.

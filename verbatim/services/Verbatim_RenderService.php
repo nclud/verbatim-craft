@@ -65,7 +65,7 @@ class Verbatim_RenderService extends BaseApplicationComponent
 
 
 	$.fn.verbatim = function(options){
-		var self = this;
+		
 		var hash = window.location.hash;
 		hash = hash.replace("%C2%A0", "%20");
 		var sanitizedHash = decodeURIComponent(hash).substr(1);
@@ -81,6 +81,18 @@ class Verbatim_RenderService extends BaseApplicationComponent
 		if (sanitizedHash.substr(0, 5) == "image"){
 			sanitizedHash = sanitizedHash.substr(7);
 			isImage = true;
+		}
+
+		var isIE = function(){
+		
+	      var ua = window.navigator.userAgent
+	      var msie = ua.indexOf ( "MSIE " )
+
+	      if ( msie > 0 )      // If Internet Explorer, return version number
+	         return parseInt (ua.substring (msie+5, ua.indexOf (".", msie )))
+	      else                 // If another browser, return 0
+	         return 0
+
 		}
 
 		var findHash = function(sanitizedHash, settings){
@@ -289,28 +301,32 @@ class Verbatim_RenderService extends BaseApplicationComponent
 			}
 		}
 
-		$(settings.searchContainer).on('mousedown', function(event){	
-			downY = event.offsetY;
-		});
+		if(! isIE()){
 
-		$(settings.searchContainer).on('mouseup', function(event){
-			upY = event.offsetY;
+			$(settings.searchContainer).on('mousedown', function(event){	
+				downY = event.offsetY;
+			});
 
-			if ($(event.target).is('#verbatimLogo')){
-				withTwitter = false;
-				copyURL();
-			} else if ($(event.target).is('#twitterLogo')){
-				withTwitter = true;
-				copyURL();
-			} else if ($(event.target).hasClass('verbatim-text-area')){
-				return false;
-			} else 
-				insertCopyButton(event.target);
+			$(settings.searchContainer).on('mouseup', function(event){
+				upY = event.offsetY;
 
-		});
+				if ($(event.target).is('#verbatimLogo')){
+					withTwitter = false;
+					copyURL();
+				} else if ($(event.target).is('#twitterLogo')){
+					withTwitter = true;
+					copyURL();
+				} else if ($(event.target).hasClass('verbatim-text-area')){
+					return false;
+				} else 
+					insertCopyButton(event.target);
 
-		if (sanitizedHash)
-			findHash(sanitizedHash, settings);
+			});
+
+			if (sanitizedHash)
+				findHash(sanitizedHash, settings);			
+		}
+
 	}
 
 }(window.jQuery);

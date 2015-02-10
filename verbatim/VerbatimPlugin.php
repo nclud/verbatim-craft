@@ -11,7 +11,7 @@ class VerbatimPlugin extends BasePlugin
 
 	function getVersion()
 	{
-		return '1.1.2';
+		return '1.1.3';
 	}
 
 	function getDeveloper()
@@ -41,7 +41,7 @@ class VerbatimPlugin extends BasePlugin
 			'scrollingOffset' => array(AttributeType::Number, 'default' => 200),
 			'addedClass' => array(AttributeType::Mixed, 'default' => 'verbatim-found-content'),
 			'highlightedClass' => array(AttributeType::Mixed, 'default' => 'highlight'),
-			'highlightColor' => array(AttributeType::Mixed, 'default' => '#FFFF00'),
+			'highlightColor' => array(AttributeType::Mixed, 'default' => 'rgb(255,255,0)'),
 			'selectedClass' => array(AttributeType::Mixed, 'default' => 'verbatim-selected-text'),
 			'buttonClass' => array(AttributeType::Mixed, 'default' => 'verbatim-button-container'),
 			'bitlyToken' => array(AttributeType::Mixed, 'default' => null)

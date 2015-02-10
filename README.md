@@ -46,9 +46,9 @@ Verbatim wraps the found content in a span element which is assigned a class, us
 
 
 ###Default Color of Highlights
-**default**: '#FFFF00'
+**default**: 'rgb(255,255,0)'
 
-**type**: hex color string
+**type**: rgb color string
 
 Pretty self-explanatory: this setting allows you to change the background color of the text when it is both selected and when it is found.
 

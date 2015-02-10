@@ -111,3 +111,6 @@ We highly recommend using Bitly to generate short links, and Verbatim works seam
 
 ###1.1.3
 * Updated documentation and code to use RGB instead of hex
+
+###1.1.4
+* Removing sepllcheck issues

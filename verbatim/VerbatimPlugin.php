@@ -11,7 +11,7 @@ class VerbatimPlugin extends BasePlugin
 
 	function getVersion()
 	{
-		return '1.1.3';
+		return '1.1.4';
 	}
 
 	function getDeveloper()

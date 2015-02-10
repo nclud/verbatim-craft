@@ -108,3 +108,6 @@ We highly recommend using Bitly to generate short links, and Verbatim works seam
 
 ###1.1.2
 * minified JS and update Verbatim to 1.3.0
+
+###1.1.3
+* Updated documentation and code to use RGB instead of hex

@@ -105,3 +105,6 @@ We highly recommend using Bitly to generate short links, and Verbatim works seam
 
 ###1.1.1
 * added IE check to prevent the plugin from firing in IE.
+
+###1.1.2
+* minified JS and update Verbatim to 1.3.0

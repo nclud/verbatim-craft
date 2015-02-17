@@ -21,7 +21,7 @@ Verbatim is released under the [GNU GPLv3 license](http://www.gnu.org/licenses/g
 5 - Include `{{ craft.verbatim.verbatim }}` in any template you want to use Verbatim.
 
 ##Settings
-Verbatim comes with the settings listed below. All settings can be easily adjusted in the plugin settings from the Craft control panel. (http://www.yoursite.com/admin/settings/plugins/verbatim)
+Verbatim comes with the settings listed below. All of these settings, and a few more, can be easily adjusted in the plugin settings from the Craft control panel. (http://www.yoursite.com/admin/settings/plugins/verbatim)
 
 ###Search Container
 **default:** 'body'

@@ -11,7 +11,7 @@ class VerbatimPlugin extends BasePlugin
 
 	function getVersion()
 	{
-		return '1.1.4';
+		return '1.2.0';
 	}
 
 	function getDeveloper()
@@ -40,6 +40,7 @@ class VerbatimPlugin extends BasePlugin
 			'selectedClass' => array(AttributeType::Mixed, 'default' => 'verbatim-selected-text'),
 			'buttonClass' => array(AttributeType::Mixed, 'default' => 'verbatim-button-container'),
 			'animated' => array(AttributeType::Mixed, 'default' => "true"),
+			'bitlyToken' => array(AttributeType::Mixed, 'default' => ''),
 			'animationSpeed' => array(AttributeType::Number, 'default' => 2000),
 			'scrollingOffset' => array(AttributeType::Number, 'default' => 200),
 			'allowImages' => array(AttributeType::Mixed, 'default' => "true")
@@ -58,8 +59,8 @@ class VerbatimPlugin extends BasePlugin
 
 		$checkboxes = array(
 			'highlightParent',
-			'defaultStyling',
-			'animated'
+			'animated',
+			'allowImages'
 		);
 
 

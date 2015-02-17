@@ -6,7 +6,7 @@
 		id: 'searchContainer',
 		name: 'searchContainer',
 		value: settings['searchContainer'],
-		label: 'Search Container',
+		label: 'Search Container (jQuery Selector)',
 		size: 30
 	})}}
 
@@ -14,33 +14,19 @@
 		id: 'animationSpeed',
 		name: 'animationSpeed',
 		value: settings['animationSpeed'],
-		label: 'Speed of Scrolling Animation',
+		label: 'Speed of Scrolling Animation (milliseconds)',
 		size: 30
 	})}}
 
-	{{textfield({
-		id: 'animationSpeed',
-		name: 'animationSpeed',
-		value: settings['animationSpeed'],
-		label: 'Speed of Scrolling Animation',
-		size: 30
-	})}}
 
 	{{textfield({
 		id: 'scrollingOffset',
 		name: 'scrollingOffset',
 		value: settings['scrollingOffset'],
-		label: 'Amount of Offset in Pixels',
+		label: 'Scrolling Offset (pixels)',
 		size: 30
 	})}}
 
-	{{textfield({
-		id: 'addedClass',
-		name: 'addedClass',
-		value: settings['addedClass'],
-		label: 'CSS Class to Add to Found Elements',
-		size: 30
-	})}}
 
 	{{textfield({
 		id: 'highlightedClass',
@@ -54,7 +40,7 @@
 		id: 'highlightColor',
 		name: 'highlightColor',
 		value: settings['highlightColor'],
-		label: 'Default Color of Highlights',
+		label: 'Default Color of Highlights (rgb)',
 		size: 30
 	})}}
 
@@ -78,7 +64,7 @@
 		id: 'bitlyToken',
 		name: 'bitlyToken',
 		value: settings['bitlyToken'],
-		label: 'Add Bitly Token to Enable Short Links',
+		label: 'Bitly Token for Short Links',
 		size: 30
 	})}}
 
@@ -95,18 +81,6 @@
 		checked: checked
 	})}}
 
-	{% set checked = "" %}
-	{% if settings.defaultStyling == "true" %}
-		{% set checked = "checked" %}
-	{% endif %}
-
-	{{checkboxField({
-		id: 'defaultStyling',
-		name: 'defaultStyling',
-		value: "true",
-		label: 'Enable Default Styling',
-		checked: checked
-	})}}
 
 	{% set checked = "" %}
 	{% if settings.animated == "true" %}

@@ -62,19 +62,22 @@ We highly recommend using Bitly to generate short links. Grab a [Bitly Authentic
 
 ##Changelog
 
-###1.1.1
-* added IE check to prevent the plugin from firing in IE.
-
-###1.1.2
-* minified JS and update Verbatim to 1.3.0
-
-###1.1.3
-* Updated documentation and code to use RGB instead of hex
-
-###1.1.4
-* Removing sepllcheck issues
+###1.2.1
+* Small performance update to make better use of Craft's templating service.
 
 ###1.2.0
 * Updating to Verbatim 1.4.0 with new user interface and stability
 * Removed some unnecessary settings
 * Updated documentation
+
+###1.1.4
+* Removing sepllcheck issues
+
+###1.1.3
+* Updated documentation and code to use RGB instead of hex
+
+###1.1.2
+* minified JS and update Verbatim to 1.3.0
+
+###1.1.1
+* added IE check to prevent the plugin from firing in IE.

@@ -21,7 +21,7 @@ Verbatim is released under the [GNU GPLv3 license](http://www.gnu.org/licenses/g
 5 - Include `{{ craft.verbatim.verbatim }}` in any template you want to use Verbatim.
 
 ##Settings
-Verbatim comes with the settings listed below. All settings can be easily adjusted in the plugin settings from the Craft control panel. (http://www.yoursite.com/admin/settings/plugins/verbatim)
+Verbatim comes with the settings listed below. All of these settings, and a few more, can be easily adjusted in the plugin settings from the Craft control panel. (http://www.yoursite.com/admin/settings/plugins/verbatim)
 
 ###Search Container
 **default:** 'body'
@@ -50,6 +50,21 @@ Sets the amount of offset (in pixels) from the top of found content. Verbatim wi
 **type:** string
 
 Verbatim wraps the found content in a span element which is assigned a class, used to highlight the found text. You can change this class if you'd like, but make sure you update your CSS.
+
+###Highlight color (rgb)
+**default:** rgb(255,255,0)
+
+**type:** rgb color string
+
+This setting allows you to change the background color of the text when it is both selected and when it is found.
+
+###CSS Class to Add to Selected Text
+**default:** verbatim-selected-text
+
+**type:** string
+
+When selected text from a Verbatim enabled container, Verbatim wraps the selected text in a span element. You can change this class if you'd like, but make sure you update your CSS.
+
 
 ###CSS Class to Add to Copy Link Button
 **default:** verbatim-button-container

@@ -1,5 +1,11 @@
 <?php
-
+/*
+*
+* Verbatim Main Plugin File
+* Author: Aaron Berkowitz (@asberk)
+* https://github.com/nclud/verbatim-craft
+*
+*/
 namespace Craft;
 
 class VerbatimPlugin extends BasePlugin

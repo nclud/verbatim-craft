@@ -77,6 +77,9 @@ We highly recommend using Bitly to generate short links. Grab a [Bitly Authentic
 
 ##Changelog
 
+###1.2.2
+* Update to Verbatim 0.1.5 for iOS and Android support
+
 ###1.2.1
 * Small performance update to make better use of Craft's templating service.
 

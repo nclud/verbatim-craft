@@ -72,7 +72,7 @@ When selected text from a Verbatim enabled container, Verbatim wraps the selecte
 **type:** string
 
 ###Bitly Token for Short Links
-We highly recommend using Bitly to generate short links. Grab a [Bitly Authentication Token](http://dev.bitly.com/get_started.html) and add it to your settings.
+We highly recommend using Bitly to generate short links. Grab a [Bitly Authentication Token](https://bitly.com/a/oauth_apps) and add it to your settings.
 
 
 ##Changelog
